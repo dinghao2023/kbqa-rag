@@ -1,9 +1,10 @@
-fastapi
-uvicorn
-openai
-python-dotenv
-numpy
-chromadb
-pypdf
-langchain-text-splitters
-python-multipart
+# 在 Python 3.12 下验证过
+fastapi==0.141.1
+uvicorn==0.53.0
+openai==3.16.2
+python-dotenv==1.2.3
+numpy==2.5.3
+chromadb==1.5.9
+pypdf==6.19.0
+langchain-text-splitters==1.1.2
+python-multipart==0.0.32
