@@ -113,7 +113,7 @@ const handleAsk = async () => {
         </span>
         <div>
           <p class="eyebrow">个人知识库</p>
-          <h1>My KBQA</h1>
+          <h1>kbqa-rag</h1>
         </div>
       </div>
       <p class="lead">上传 PDF，用自然语言提问。回答只依据文档内容，并标出来源。</p>

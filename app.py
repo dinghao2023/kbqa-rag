@@ -28,7 +28,7 @@ splitter = RecursiveCharacterTextSplitter(
     separators=["\n\n", "\n", "。", "！", "？", ".", " ", ""],
 )
 
-app = FastAPI(title="My KBQA")
+app = FastAPI(title="kbqa-rag")
 
 # 允许前端跨域访问（你 React 跑在别的端口，必须开）
 app.add_middleware(

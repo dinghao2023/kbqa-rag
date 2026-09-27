@@ -1,4 +1,4 @@
-# My KBQA · 知识库智能问答
+# kbqa-rag · 知识库智能问答
 
 基于 RAG 的个人知识库问答。上传 PDF 后用自然语言提问，回答只依据文档内容，并标出来源；资料里没有的内容会明确说明无法回答。
 从零实现 RAG 全链路：FastAPI + Chroma + bge-m3 + DeepSeek，PDF 语义检索问答，支持来源溯源。
@@ -87,8 +87,8 @@ python qa.py
 镜像只包含后端 API，不包含前端页面。构建文件名是小写的 `dockerfile`：
 
 ```bash
-docker build -f dockerfile -t my-kbqa .
-docker run -p 8000:8000 --env-file .env my-kbqa
+docker build -f dockerfile -t kbqa-rag .
+docker run -p 8000:8000 --env-file .env kbqa-rag
 ```
 
 容器起来后访问 `http://127.0.0.1:8000/docs` 调试接口。向量库在容器内，删除容器后需要重新上传文档。
